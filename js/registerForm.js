@@ -11,6 +11,9 @@ const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+")
 const passwordRegex = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,30}$/
 const totalUsers = []
 
+
+
+
 class Users {
   constructor(username, email, password, rol) {
     this.username = username;
@@ -29,6 +32,7 @@ function createUser () {
 
 	totalUsers.push(user)
 	console.log(totalUsers)
+	localStorage.setItem("totalUsers", JSON.stringify(totalUsers));
 }
 
 form.addEventListener('submit', e => {
