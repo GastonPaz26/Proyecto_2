@@ -34,25 +34,30 @@
 	opacity: 1;
 	z-index: 999;
 }
-
-.border-success {
-	border: 5px solid green !important; 
-  color:  green !important;
+.border-none{
+  border-radius: 2px black !important;
 }
-.border-error input{
-	border: 5px solid red !important; 
-  color: red !important;
+.border-success {
+	border: 2px solid green !important; 
+  color: green;
 }
 
 .border-error {
-  color: red !important;
-}
-
-.small, small{
+	border: 2px solid red !important; 
   color: red;
-  font-weight: bold;
+
 }
 
+
+
+.small-error, small {
+    font-weight: bold;
+    color: red;
+}
+.small-success, small {
+    font-weight: bold;
+    color: green;
+}
 .modal1 {
 	background-color: #fff;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
